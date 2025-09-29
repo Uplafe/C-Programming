@@ -96,3 +96,24 @@ int main() {
     }
     return 0;
 }
+
+
+//----goto---------------------
+
+#include <stdio.h>
+
+int main() {
+    int a;
+    Here:
+    printf("Enter the value: ");
+    scanf("%d", &a);
+    if (a % 2 == 0) { 
+        printf("number is even\n");
+    } else {
+        printf("number is odd\n");
+    }
+    
+    
+ goto Here;
+ return 0;
+} 
