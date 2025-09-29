@@ -139,9 +139,40 @@ int main() {
     goto Here;
     return 0;
 }
+
+
+## End goto
+
+#include <stdio.h>
+
+int main() {
+    int a;
+    int continue_program;
+    
+Here:
+    printf("Enter the value: ");
+    scanf("%d", &a);
+    
+    if (a % 2 == 0) {
+        printf("number is even\n");
+    } else {
+        printf("number is odd\n");
+    }
+
+    printf("Do you want to continue? (1 for Yes / 0 for No): ");
+    scanf("%d", &continue_program);
+    
+    if (continue_program != 0) {
+        goto Here; 
+    }
+    
+    return 0;
+}
+
 ```
 
 ```
 
 ---
+
 
