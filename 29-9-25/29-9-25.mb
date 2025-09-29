@@ -1,4 +1,8 @@
-//---------SUM------------------
+````md
+# C Programs Notes
+
+## SUM
+```c
 #include <stdio.h>
 
 int main() {
@@ -11,8 +15,11 @@ int main() {
     printf("The sum of %d and %d is %d\n", a, b, sum); 
     return 0;
 }
+````
 
-//---------SUB------------------
+## SUB
+
+```c
 #include <stdio.h>
 
 int main() {
@@ -25,8 +32,11 @@ int main() {
     printf("The sub of %d and %d is %d\n", a, b, sub); 
     return 0;
 }
+```
 
-//---------MUL------------------
+## MUL
+
+```c
 #include <stdio.h>
 
 int main() {
@@ -39,8 +49,11 @@ int main() {
     printf("The mul of %d and %d is %d\n", a, b, mul); 
     return 0;
 }
+```
 
-//---------DIV------------------
+## DIV
+
+```c
 #include <stdio.h>
 
 int main() {
@@ -49,12 +62,15 @@ int main() {
     scanf("%d", &a); 
     printf("Enter the second value: "); 
     scanf("%d", &b); 
-   div = a / b;
+    div = a / b;
     printf("The div of %d and %d is %d\n", a, b, div); 
     return 0;
 }
+```
 
-//---------All------------------
+## ALL OPERATIONS
+
+```c
 #include <stdio.h>
 
 int main() {
@@ -65,12 +81,16 @@ int main() {
 
     printf("Enter the second value: ");
     scanf("%d", &b);
+
     sum = a + b;
     printf("The sum of %d and %d is %d\n", a, b, sum);
+
     sub = a - b;
     printf("The subtraction of %d and %d is %d\n", a, b, sub);
+
     mul = a * b;
     printf("The multiplication of %d and %d is %d\n", a, b, mul);
+
     if (b != 0) {
         div = a / b;
         printf("The division of %d and %d is %d\n", a, b, div);
@@ -80,9 +100,11 @@ int main() {
 
     return 0;
 }
+```
 
+## ODD or EVEN
 
-//-----ODD or EVEN-------------
+```c
 #include <stdio.h>
 
 int main() {
@@ -96,10 +118,11 @@ int main() {
     }
     return 0;
 }
+```
 
+## GOTO Example
 
-//----goto---------------------
-
+```c
 #include <stdio.h>
 
 int main() {
@@ -113,7 +136,12 @@ int main() {
         printf("number is odd\n");
     }
     
-    
- goto Here;
- return 0;
-} 
+    goto Here;
+    return 0;
+}
+```
+
+```
+
+---
+
