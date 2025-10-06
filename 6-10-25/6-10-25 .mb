@@ -1,0 +1,123 @@
+Program 1
+
+#include <stdio.h>
+
+int main() 
+{
+    char c;
+    printf("Enter a character: ");
+    scanf(" %c", &c); 
+    
+    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+        c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+    {
+        printf("The character is a vowel.\n");  
+    }
+    else
+    {
+        printf("The character is a consonant.\n");
+    }
+
+    return 0;
+}
+
+
+Program 2
+
+#include <stdio.h>
+
+int main() 
+{
+    int age;
+    
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    if (age >= 18) {
+        printf("You are eligible");
+    } 
+    else {
+        printf("You are under 18.\n");
+    }
+
+    return 0;
+}
+
+Program 3
+
+#include <stdio.h>
+
+int main() 
+{
+    int p, t;     
+    float r, z;     
+
+    printf("Input principal: ");
+    scanf("%d", &p);
+
+    printf("Input interest rate: ");
+    scanf("%f", &r);
+
+    printf("Input time in months: ");
+    scanf("%d", &t);
+
+    z = (p * r * t) / 100;
+
+    printf("Your total interest is: %.2f\n", z);
+
+    return 0;
+}
+
+program 4
+
+#include <stdio.h>
+
+int main() 
+{
+    int a, b;
+
+    printf("Enter first number: ");
+    scanf("%d", &a);
+
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    if (a > b) {
+        printf("%d is the largest number.\n", a);
+    } 
+    else if (b > a) {
+        printf("%d is the largest number.\n", b);
+    } 
+    else {
+        printf("Both numbers are equal.\n");
+    }
+
+    return 0;
+}
+
+program 5
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int a, b, temp;
+
+    printf("Enter first number: ");
+    scanf("%d", &a);
+
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    printf("After swapping:\n");
+    printf("First number = %d\n", a);
+    printf("Second number = %d\n", b);
+
+    return 0;
+}
+
