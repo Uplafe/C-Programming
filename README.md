@@ -11,7 +11,7 @@ Each section below includes:
 
 ## 📂 Table of Contents
 
-1. [Simple Calculator] Addition, Subtraction, Multiplication Calculator.(#Simple-Calculator)
+1. [Simple Calculator](#Simple-Calculator) Addition, Subtraction, Multiplication Calculator.
 1. [Shopping Discount System](#shopping-discount-system)
 2. [Largest of Two Numbers](#largest-of-two-numbers)
 3. [Swap Two Numbers](#swap-two-numbers)
