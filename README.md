@@ -68,3 +68,54 @@ int op_choice;
  
     return 0;
 }
+
+---
+
+## 🛒 Simple Calculator
+
+**Description:**  
+A program that calculates discounts based on membership type and total purchase.
+
+### 💻 Code
+```c
+#include <stdio.h>
+
+int main() 
+{
+int a, b;
+int op_choice;
+ printf("Enter 1 for Addition, 2 for Subtraction, 3 for Multiplication:");
+  scanf("%d", &op_choice);
+ switch (op_choice)
+ {
+     case 1:
+      printf("Input the value of a(a+b=?):");
+       scanf("%d",&a);
+      printf("Input the value of b (a+b=?):");
+       scanf("%d",&b);
+      printf("The sum of %d and %d is %d",a,b,a+b);
+      break;
+
+     case 2:
+      printf("Input the value of a(a-b=?):");
+       scanf("%d",&a);
+      printf("Input the value of b (a-b=?):");
+       scanf("%d",&b);
+      printf("The sum of %d and %d is %d",a,b,a-b);
+      break;
+
+     case 3:
+      printf("Input the value of a(a x b=?):");
+       scanf("%d",&a);
+      printf("Input the value of b (a x b=?):");
+       scanf("%d",&b);
+      printf("The sum of %d and %d is %d",a,b,a*b);
+      break;
+      
+     default:
+     
+     printf("Error");
+ }
+ 
+    return 0;
+}
