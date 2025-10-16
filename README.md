@@ -69,7 +69,7 @@ int op_choice;
     return 0;
 }
 
----
+```
 
 ## 🛒 Simple Calculator
 
