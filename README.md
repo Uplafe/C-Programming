@@ -1,4 +1,4 @@
-# 🧠 C Programming Projects — First Year Computer Science
+# C Programming Projects — First Year Computer Science
 
 Welcome to my C programming showcase!  
 This repository contains all the programs I’ve written as part of my first-year CS journey.  
@@ -11,6 +11,7 @@ Each section below includes:
 
 ## 📂 Table of Contents
 
+1. [Simple Calculator] Addition, Subtraction, Multiplication Calculator.(#Simple-Calculator)
 1. [Shopping Discount System](#shopping-discount-system)
 2. [Largest of Two Numbers](#largest-of-two-numbers)
 3. [Swap Two Numbers](#swap-two-numbers)
@@ -19,7 +20,7 @@ Each section below includes:
 
 ---
 
-## 🛒 Shopping Discount System
+## 🛒 Simple Calculator
 
 **Description:**  
 A program that calculates discounts based on membership type and total purchase.
@@ -28,22 +29,42 @@ A program that calculates discounts based on membership type and total purchase.
 ```c
 #include <stdio.h>
 
-int main() {
-    char member;
-    float amount, discount = 0.0;
+int main() 
+{
+int a, b;
+int op_choice;
+ printf("Enter 1 for Addition, 2 for Subtraction, 3 for Multiplication:");
+  scanf("%d", &op_choice);
+ switch (op_choice)
+ {
+     case 1:
+      printf("Input the value of a(a+b=?):");
+       scanf("%d",&a);
+      printf("Input the value of b (a+b=?):");
+       scanf("%d",&b);
+      printf("The sum of %d and %d is %d",a,b,a+b);
+      break;
 
-    printf("Enter membership type (G for Gold, S for Silver, N for None): ");
-    scanf(" %c", &member);
-    printf("Enter total purchase amount: ");
-    scanf("%f", &amount);
+     case 2:
+      printf("Input the value of a(a-b=?):");
+       scanf("%d",&a);
+      printf("Input the value of b (a-b=?):");
+       scanf("%d",&b);
+      printf("The sum of %d and %d is %d",a,b,a-b);
+      break;
 
-    if (member == 'G' && amount > 500)
-        discount = amount * 0.2;
-    else if (member == 'S' && amount > 300)
-        discount = amount * 0.1;
-
-    printf("Discount: %.2f\n", discount);
-    printf("Final amount: %.2f\n", amount - discount);
-
+     case 3:
+      printf("Input the value of a(a x b=?):");
+       scanf("%d",&a);
+      printf("Input the value of b (a x b=?):");
+       scanf("%d",&b);
+      printf("The sum of %d and %d is %d",a,b,a*b);
+      break;
+      
+     default:
+     
+     printf("Error");
+ }
+ 
     return 0;
 }
