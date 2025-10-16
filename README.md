@@ -12,7 +12,7 @@ Each section below includes:
 ## 📂 Table of Contents
 
 1. [Simple Calculator](#Simple-Calculator) Addition, Subtraction, Multiplication Calculator.
-1. [Shopping Discount System](#shopping-discount-system)
+1. [Individual Arithmetic Operations Calculator ](#Individual_Arithmetic_Operations_Calculator)
 2. [Largest of Two Numbers](#largest-of-two-numbers)
 3. [Swap Two Numbers](#swap-two-numbers)
 4. [Positive, Negative, or Zero](#positive-negative-or-zero)
@@ -20,10 +20,10 @@ Each section below includes:
 
 ---
 
-## 🛒 Simple Calculator
+## 🧮 Simple Calculator
 
 **Description:**  
-A program that calculates discounts based on membership type and total purchase.
+A program that allows users to calculate simple equations.
 
 ### 💻 Code
 ```c
@@ -71,51 +71,84 @@ int op_choice;
 
 ```
 
-## 🛒 Simple Calculator
+## 🧮 Individual Arithmetic Operations Calculator
 
 **Description:**  
-A program that calculates discounts based on membership type and total purchase.
+A program that allows users to calculate simple equations.
 
 ### 💻 Code
+
+## ➕ Addition
+```c
+
+#include <stdio.h>
+
+int main() {
+    int a, b, sub; 
+    printf("Enter the first value: "); 
+    scanf("%d", &a); 
+    printf("Enter the second value: "); 
+    scanf("%d", &b); 
+    sub = a - b;
+    printf("The sub of %d and %d is %d\n", a, b, sub); 
+    return 0;
+}
+```
+## ✖️ Multiplication
 ```c
 #include <stdio.h>
 
-int main() 
-{
-int a, b;
-int op_choice;
- printf("Enter 1 for Addition, 2 for Subtraction, 3 for Multiplication:");
-  scanf("%d", &op_choice);
- switch (op_choice)
- {
-     case 1:
-      printf("Input the value of a(a+b=?):");
-       scanf("%d",&a);
-      printf("Input the value of b (a+b=?):");
-       scanf("%d",&b);
-      printf("The sum of %d and %d is %d",a,b,a+b);
-      break;
-
-     case 2:
-      printf("Input the value of a(a-b=?):");
-       scanf("%d",&a);
-      printf("Input the value of b (a-b=?):");
-       scanf("%d",&b);
-      printf("The sum of %d and %d is %d",a,b,a-b);
-      break;
-
-     case 3:
-      printf("Input the value of a(a x b=?):");
-       scanf("%d",&a);
-      printf("Input the value of b (a x b=?):");
-       scanf("%d",&b);
-      printf("The sum of %d and %d is %d",a,b,a*b);
-      break;
-      
-     default:
-     
-     printf("Error");
- }
- 
+int main() {
+    int a, b, mul; 
+    printf("Enter the first value: "); 
+    scanf("%d", &a); 
+    printf("Enter the second value: "); 
+    scanf("%d", &b); 
+    mul = a * b;
+    printf("The mul of %d and %d is %d\n", a, b, mul); 
     return 0;
 }
+```
+## ➗ Division
+```c
+#include <stdio.h>
+
+int main() {
+    int a, b, div; 
+    printf("Enter the first value: "); 
+    scanf("%d", &a); 
+    printf("Enter the second value: "); 
+    scanf("%d", &b); 
+   div = a / b;
+    printf("The div of %d and %d is %d\n", a, b, div); 
+    return 0;
+}
+```
+## 🔁 Calculator combinded with all the previous operations.
+```c
+#include <stdio.h>
+
+int main() {
+    int a, b, sum, sub, mul, div;
+
+    printf("Enter the first value: ");
+    scanf("%d", &a);
+
+    printf("Enter the second value: ");
+    scanf("%d", &b);
+    sum = a + b;
+    printf("The sum of %d and %d is %d\n", a, b, sum);
+    sub = a - b;
+    printf("The subtraction of %d and %d is %d\n", a, b, sub);
+    mul = a * b;
+    printf("The multiplication of %d and %d is %d\n", a, b, mul);
+    if (b != 0) {
+        div = a / b;
+        printf("The division of %d and %d is %d\n", a, b, div);
+    } else {
+        printf("Error: Division by zero is not allowed.\n");
+    }
+
+    return 0;
+}
+```
