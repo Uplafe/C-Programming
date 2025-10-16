@@ -13,7 +13,7 @@ Each section below includes:
 
 1. [Simple Calculator](#Simple-Calculator) Addition, Subtraction, Multiplication Calculator.
 1. [Individual Arithmetic Operations Calculator ](#Individual_Arithmetic_Operations_Calculator)
-2. [Largest of Two Numbers](#largest-of-two-numbers)
+2. [Even Or Odd Identifier](#Even_Or_Odd_Identifier)
 3. [Swap Two Numbers](#swap-two-numbers)
 4. [Positive, Negative, or Zero](#positive-negative-or-zero)
 5. [Simple Interest Calculator](#simple-interest-calculator)
@@ -152,3 +152,54 @@ int main() {
     return 0;
 }
 ```
+## 🔁 Calculator combinded with all the previous operations.
+```c
+#include <stdio.h>
+
+int main() {
+    int a, b, sum, sub, mul, div;
+
+    printf("Enter the first value: ");
+    scanf("%d", &a);
+
+    printf("Enter the second value: ");
+    scanf("%d", &b);
+    sum = a + b;
+    printf("The sum of %d and %d is %d\n", a, b, sum);
+    sub = a - b;
+    printf("The subtraction of %d and %d is %d\n", a, b, sub);
+    mul = a * b;
+    printf("The multiplication of %d and %d is %d\n", a, b, mul);
+    if (b != 0) {
+        div = a / b;
+        printf("The division of %d and %d is %d\n", a, b, div);
+    } else {
+        printf("Error: Division by zero is not allowed.\n");
+    }
+
+    return 0;
+}
+```
+
+## 🧮 Even or Odd Identifier
+**Description:**  
+A program that allows users to identifiy if a value is even or odd.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a;
+    printf("Enter the value: ");
+    scanf("%d", &a);
+    if (a % 2 == 0) { 
+        printf("number is even"); 
+    } else {
+        printf("number is odd");
+    }
+    return 0;
+}
+
+```
+
+```c
