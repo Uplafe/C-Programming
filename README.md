@@ -20,6 +20,7 @@ Each section below includes:
 7. [Largest of Two Numbers](#-largest-of-two-numbers)
 8. [Swap Two Numbers](#-swap-two-numbers)
 9. [Positive, Negative, or Zero](#️-positive-negative-or-zero)
+10. [Shopping Discount System](#-shopping-discount-system)
 
 ---
 
@@ -347,6 +348,87 @@ int main()
     } 
     else {
         printf("The number is zero.\n");
+    }
+
+    return 0;
+}
+```
+## 🏷️ Shopping Discount System
+
+**Description:**
+This program calculates the total bill amount after applying membership-based discounts.
+```c
+#include <stdio.h>
+
+int main() 
+{
+int mem;
+float bill;
+ printf("Memberships: \n 1. Gold, \n 2. Silver, \n 3. Not a Member \n Select a membership to continue:");
+   scanf("%d",&mem);
+ printf("Enter billing amount:");
+   scanf("%f",&bill);
+switch (mem)
+{
+   case 1:
+   {
+   if(bill>=500)
+   printf("Gold Member - Total: %f", bill - (20*bill/100));
+   else
+   printf("Gold Member - Total: %f", bill);
+   }
+   break;
+   
+   case 2:
+   {
+   if(bill>=500)
+   printf("Silever Member - Total: %f", bill - (10*bill/100));
+   else
+   printf("Silever Member - Total: %f", bill);
+   }
+   break;
+   
+   case 3:
+   {
+   if(bill>=500)
+   printf("No Membership - Total: %f", bill - (5*bill/100));
+   else
+   printf("No Membership - Total: %f", bill);
+   }
+   break;
+}
+return 0;
+}
+```
+## 🚦 Traffic Light Signal System
+
+**Description:**
+A simple traffic light simulation that instructs users what action to take depending on the traffic signal color they choose.
+```c
+#include <stdio.h>
+
+int main() {
+    int signal;
+
+    printf("Traffic Signal: \n 1. Green (Go) \n 2. Yellow (Ready to stop) \n 3. Red (Stop)\n");
+    printf("Enter your choice (1-3): ");
+    scanf("%d", &signal);
+
+    switch(signal) {
+        case 1:
+            printf("GO\n");
+            break;
+
+        case 2:
+            printf("Ready to Stop\n");
+            break;
+
+        case 3:
+            printf("Stop\n");
+            break;
+
+        default:
+            printf("Invalid input\n");
     }
 
     return 0;
