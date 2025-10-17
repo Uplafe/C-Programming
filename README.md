@@ -28,7 +28,6 @@ Each section below includes:
 **Description:**  
 A program that allows users to calculate simple equations.
 
-### 💻 Code
 ```c
 #include <stdio.h>
 
