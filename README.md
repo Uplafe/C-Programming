@@ -72,13 +72,6 @@ int op_choice;
 }
 ```
 
-### 🪄 What this does:
-- The **button** (`[![Run on Replit]...]`) is just a clickable badge.
-- When clicked, it opens **Replit.com** in a new tab.
-- You can make it go directly to your C program by replacing the URL with your own Replit link, e.g.:
-  ```markdown
-  [![Run on Replit](https://img.shields.io/badge/Replit-Run-blue?logo=replit)](https://replit.com/@YourUsername/largest-of-two-numbers)
-
 ## 🧮 Individual Arithmetic Operations Calculator
 
 **Description:** 
