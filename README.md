@@ -173,7 +173,7 @@ int main() {
 
 
 ```
-# 🧮 Even or Odd Identifier using (goto) Statement
+### 🧮 Even or Odd Identifier using (goto) Statement
 ```C
 #include <stdio.h>
 
