@@ -21,6 +21,7 @@ Each section below includes:
 8. [Swap Two Numbers](#-swap-two-numbers)
 9. [Positive, Negative, or Zero](#️-positive-negative-or-zero)
 10. [Shopping Discount System](#-shopping-discount-system)
+11. [Traffic Light Signal System](#-traffic-light-signal-system)
 
 ---
 
