@@ -1,4 +1,4 @@
-# C Programming Projects — First Year Computer Science
+# 🧠 C Programming Projects — First Year Computer Science
 
 Welcome to my C programming showcase!  
 This repository contains all the programs I’ve written as part of my first-year CS journey.  
@@ -11,15 +11,15 @@ Each section below includes:
 
 ## 📂 Table of Contents
 
-1. [Simple Calculator](#Simple-Calculator) Addition, Subtraction, Multiplication Calculator.
-1. [Individual Arithmetic Operations Calculator ](#Individual_Arithmetic_Operations_Calculator)
-2. [Even Or Odd Identifier](#Even_Or_Odd_Identifier)
-3. [Alphabets Vowel checker](#alphabets_vowel_checker)
-4. [Age verification](#age_verification)
-5. [Simple Interest Calculator](#simple-interest-calculator)
-6. [Largest of Two Numbers](#Largest_of_Two_Numbers)
-7. [Swap Two Numbers](#swap-two-numbers)
-8. [Positive, Negative, or Zero](#positive-negative-or-zero)
+1. [Simple Calculator](#-simple-calculator)
+2. [Individual Arithmetic Operations Calculator](#-individual-arithmetic-operations-calculator)
+3. [Even Or Odd Identifier](#-even-or-odd-identifier)
+4. [Alphabets Vowel Checker](#-alphabets-vowel-checker)
+5. [Age Verification](#-age-verification)
+6. [Simple Interest Calculator](#-simple-interest-calculator)
+7. [Largest of Two Numbers](#-largest-of-two-numbers)
+8. [Swap Two Numbers](#-swap-two-numbers)
+9. [Positive, Negative, or Zero](#️-positive-negative-or-zero)
 
 ---
 
@@ -70,19 +70,15 @@ int op_choice;
  
     return 0;
 }
-
 ```
 
-## 🧮 Individual Arithmetic Operations Calculator
+🧮 Individual Arithmetic Operations Calculator
 
-**Description:**  
+Description:
 A program that allows users to calculate simple equations.
 
-#### 💻 Code
-
-### ➕ Addition
+➕ Addition
 ```c
-
 #include <stdio.h>
 
 int main() {
@@ -97,8 +93,7 @@ int main() {
 }
 ```
 
-### ✖️ Multiplication
-
+✖️ Multiplication
 ```c
 #include <stdio.h>
 
@@ -114,8 +109,7 @@ int main() {
 }
 ```
 
-### ➗ Division
-
+➗ Division
 ```c
 #include <stdio.h>
 
@@ -130,9 +124,7 @@ int main() {
     return 0;
 }
 ```
-
-### 🔁 Calculator combinded with all the previous operations.
-
+🔁 Combined Calculator (All Operations)
 ```c
 #include <stdio.h>
 
@@ -160,11 +152,10 @@ int main() {
     return 0;
 }
 ```
+🔢 Even or Odd Identifier
 
-## 🧮 Even or Odd Identifier
-**Description:**  
-A program that allows users to identifiy if a value is even or odd.
-
+Description:
+A program that allows users to identify if a value is even or odd.
 ```c
 #include <stdio.h>
 
@@ -179,15 +170,10 @@ int main() {
     }
     return 0;
 }
-
-
 ```
-
-### 🧮 Even or Odd Identifier using (goto) Statement
-
-```C
+🌀 Even or Odd Identifier using (goto) Statement
 #include <stdio.h>
-
+```c
 int main() {
     int a;
     Here:
@@ -199,17 +185,15 @@ int main() {
         printf("number is odd\n");
     }
     
-    
  goto Here;
  return 0;
 } 
 ```
+🔠 Alphabets Vowel Checker
 
-##🔠 Alphabets Vowel checker
-**Description:**  
-A program that allows users to identifiy if a value is a vowel or consonant.
-
-```C
+Description:
+A program that allows users to identify if a character is a vowel or consonant.
+```c
 #include <stdio.h>
 
 int main() 
@@ -231,11 +215,10 @@ int main()
     return 0;
 }
 ```
+🔞 Age Verification
 
-##🔞 Age verification
-**Description:**  
-A program that allows users to identifiy if the age inputed is eligible or underage.
-
+Description:
+A program that allows users to identify if the inputted age is eligible or underage.
 ```c
 #include <stdio.h>
 
@@ -256,11 +239,10 @@ int main()
     return 0;
 }
 ```
+💹 Simple Interest Calculator
 
-## 💹 Simple Interest Calculator
-**Description:**  
-A program that allows users to calculate simple intrest.
-
+Description:
+A program that allows users to calculate simple interest.
 ```c
 #include <stdio.h>
 
@@ -285,11 +267,10 @@ int main()
     return 0;
 }
 ```
+🟰 Largest of Two Numbers
 
-## 🟰 Largest of Two Numbers
-**Description:**  
-A program that allows users to find the greatest of 2 values.
-
+Description:
+A program that allows users to find the greatest of two values.
 ```c
 #include <stdio.h>
 
@@ -316,11 +297,10 @@ int main()
     return 0;
 }
 ```
+🔁 Swap Two Numbers
 
-##🔁 Swap Two Numbers
-**Description:**  
+Description:
 Demonstrates variable swapping using a temporary variable.
-
 ```c
 #include <stdio.h>
 
@@ -345,31 +325,30 @@ int main()
     return 0;
 }
 ```
+⚖️ Positive, Negative, or Zero
 
-##⚖️ Positive, Negative, or Zero
-**Description:**  
+Description:
 Checks if a number is positive, negative, or zero.
-
 ```c
-    #include <stdio.h>
+#include <stdio.h>
 
-    int main() 
-    {
-        int num;
+int main() 
+{
+    int num;
 
-        printf("Enter a number: ");
-        scanf("%d", &num);
+    printf("Enter a number: ");
+    scanf("%d", &num);
 
-        if (num > 0) {
-            printf("The number is positive.\n");
-        } 
-        else if (num < 0) {
-            printf("The number is negative.\n");
-        } 
-        else {
-            printf("The number is zero.\n");
-        }
-
-        return 0;
+    if (num > 0) {
+        printf("The number is positive.\n");
+    } 
+    else if (num < 0) {
+        printf("The number is negative.\n");
+    } 
+    else {
+        printf("The number is zero.\n");
     }
+
+    return 0;
+}
 ```
