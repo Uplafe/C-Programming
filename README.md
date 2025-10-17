@@ -152,35 +152,6 @@ int main() {
     return 0;
 }
 ```
-## 🔁 Calculator combinded with all the previous operations.
-```c
-#include <stdio.h>
-
-int main() {
-    int a, b, sum, sub, mul, div;
-
-    printf("Enter the first value: ");
-    scanf("%d", &a);
-
-    printf("Enter the second value: ");
-    scanf("%d", &b);
-    sum = a + b;
-    printf("The sum of %d and %d is %d\n", a, b, sum);
-    sub = a - b;
-    printf("The subtraction of %d and %d is %d\n", a, b, sub);
-    mul = a * b;
-    printf("The multiplication of %d and %d is %d\n", a, b, mul);
-    if (b != 0) {
-        div = a / b;
-        printf("The division of %d and %d is %d\n", a, b, div);
-    } else {
-        printf("Error: Division by zero is not allowed.\n");
-    }
-
-    return 0;
-}
-```
-
 ## 🧮 Even or Odd Identifier
 **Description:**  
 A program that allows users to identifiy if a value is even or odd.
@@ -200,6 +171,25 @@ int main() {
     return 0;
 }
 
-```
 
+```
+# 🧮 Even or Odd Identifier using (goto) Statement
+```C
+#include <stdio.h>
+
+int main() {
+    int a;
+    Here:
+    printf("Enter the value: ");
+    scanf("%d", &a);
+    if (a % 2 == 0) { 
+        printf("number is even\n");
+    } else {
+        printf("number is odd\n");
+    }
+    
+    
+ goto Here;
+ return 0;
+} 
 ```c
