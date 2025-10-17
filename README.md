@@ -72,12 +72,12 @@ int op_choice;
 }
 ```
 
-🧮 Individual Arithmetic Operations Calculator
+## 🧮 Individual Arithmetic Operations Calculator
 
-Description:
+**Description:** 
 A program that allows users to calculate simple equations.
 
-➕ Addition
+### ➕ Addition
 ```c
 #include <stdio.h>
 
@@ -93,7 +93,7 @@ int main() {
 }
 ```
 
-✖️ Multiplication
+### ✖️ Multiplication
 ```c
 #include <stdio.h>
 
@@ -109,7 +109,7 @@ int main() {
 }
 ```
 
-➗ Division
+### ➗ Division
 ```c
 #include <stdio.h>
 
@@ -124,7 +124,7 @@ int main() {
     return 0;
 }
 ```
-🔁 Combined Calculator (All Operations)
+### 🔁 Combined Calculator (All Operations)
 ```c
 #include <stdio.h>
 
@@ -152,9 +152,9 @@ int main() {
     return 0;
 }
 ```
-🔢 Even or Odd Identifier
+## 🔢 Even or Odd Identifier
 
-Description:
+**Description:** 
 A program that allows users to identify if a value is even or odd.
 ```c
 #include <stdio.h>
@@ -171,7 +171,7 @@ int main() {
     return 0;
 }
 ```
-🌀 Even or Odd Identifier using (goto) Statement
+### 🌀 Even or Odd Identifier using (goto) Statement
 #include <stdio.h>
 ```c
 int main() {
@@ -189,9 +189,9 @@ int main() {
  return 0;
 } 
 ```
-🔠 Alphabets Vowel Checker
+## 🔠 Alphabets Vowel Checker
 
-Description:
+**Description:** 
 A program that allows users to identify if a character is a vowel or consonant.
 ```c
 #include <stdio.h>
@@ -215,9 +215,9 @@ int main()
     return 0;
 }
 ```
-🔞 Age Verification
+## 🔞 Age Verification
 
-Description:
+**Description:** 
 A program that allows users to identify if the inputted age is eligible or underage.
 ```c
 #include <stdio.h>
@@ -239,9 +239,9 @@ int main()
     return 0;
 }
 ```
-💹 Simple Interest Calculator
+## 💹 Simple Interest Calculator
 
-Description:
+**Description:** 
 A program that allows users to calculate simple interest.
 ```c
 #include <stdio.h>
@@ -267,9 +267,9 @@ int main()
     return 0;
 }
 ```
-🟰 Largest of Two Numbers
+## 🟰 Largest of Two Numbers
 
-Description:
+**Description:** 
 A program that allows users to find the greatest of two values.
 ```c
 #include <stdio.h>
@@ -297,9 +297,9 @@ int main()
     return 0;
 }
 ```
-🔁 Swap Two Numbers
+## 🔁 Swap Two Numbers
 
-Description:
+**Description:** 
 Demonstrates variable swapping using a temporary variable.
 ```c
 #include <stdio.h>
@@ -325,9 +325,9 @@ int main()
     return 0;
 }
 ```
-⚖️ Positive, Negative, or Zero
+## ⚖️ Positive, Negative, or Zero
 
-Description:
+**Description:** 
 Checks if a number is positive, negative, or zero.
 ```c
 #include <stdio.h>
