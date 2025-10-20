@@ -22,6 +22,8 @@ Each section below includes:
 9. [Positive, Negative, or Zero](#️-positive-negative-or-zero)
 10. [Shopping Discount System](#-shopping-discount-system)
 11. [Traffic Light Signal System](#-traffic-light-signal-system)
+12. [Grade Estimator](#-grade-estimator)
+13. [ATM menu](#-atm-menu)
 
 ---
 
@@ -435,3 +437,91 @@ int main() {
     return 0;
 }
 ```
+## 🔠 Grade Estimator
+
+**Description:**
+Student grade estimator to transfer grades out of 100 to letters.
+```c
+#include <stdio.h>
+
+int main() {
+    int marks;
+    float attendance;
+    char grade;
+
+    printf("Enter student marks: ");
+    scanf("%d", &marks);
+
+    printf("Enter attendance percentage: ");
+    scanf("%f", &attendance);
+
+    if (marks >= 90)
+        grade = 'A';
+    else if (marks >= 75)
+        grade = 'B';
+    else if (marks >= 60)
+        grade = 'C';
+    else
+        grade = 'F';
+
+    if (attendance < 75) {
+        if (grade == 'A')
+            grade = 'B';
+        else if (grade == 'B')
+            grade = 'C';
+        else if (grade == 'C')
+            grade = 'F';
+    }
+
+    printf("Final Grade: %c\n", grade);
+
+    return 0;
+}
+```
+
+## 🏧 ATM menu
+
+**Description:**
+ATM interface for deposit, withdraw and check balance.
+```c
+#include <stdio.h>
+
+int main() 
+{
+    int selc;
+    float serv;
+    
+    printf("Enter Account Number:\n");
+    scanf("%d", &selc);  // assuming account input, fixed &
+
+    printf("Select an ATM service: \n1. Deposit\n2. Withdraw\n3. Check Balance\n");
+    scanf("%d", &selc);
+     
+    switch (selc)
+    {
+        case 1:
+            printf("Enter Deposit Amount: ");
+            scanf("%f", &serv);
+            printf("%.2f has been deposited.\n", serv);
+            break;
+
+        case 2:
+            printf("Enter Withdrawal Amount:\n");
+            scanf("%f", &serv);
+            printf("You have withdrawn %.2f\n", serv);
+            break;
+
+        case 3:
+            printf("Your total balance is %.2f\n", serv);
+            break;
+
+        default:
+            printf("Invalid choice.\n");
+            break;
+    }
+
+    return 0;
+}
+
+```
+
