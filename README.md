@@ -91,7 +91,7 @@ int main() {
     scanf("%d", &a); 
     printf("Enter the second value: "); 
     scanf("%d", &b); 
-    sub = a + b;
+    sum = a + b;
     printf("The sub of %d and %d is %d\n", a, b, sum); 
     return 0;
 }
