@@ -540,3 +540,158 @@ int main()
 
 ```
 
+## 🚗 Car Insurance Premium
+
+**Description:**
+Calculates the insurance premium rate based on age and driving experience.
+```c
+#include <stdio.h>
+
+int main() {
+    int age, experience;
+    float rate;
+
+    printf("Enter age: ");
+    scanf("%d", &age);
+    printf("Enter driving experience (years): ");
+    scanf("%d", &experience);
+
+    if (age >= 25) {
+        if (experience >= 5)
+            rate = 5.0;
+        else
+            rate = 8.0;
+    } else {
+        rate = 12.0;
+    }
+
+    printf("Premium Rate: %.1f%%\n", rate);
+    return 0;
+}
+
+
+```
+
+## ⚡ Electricity Bill Calculator
+
+**Description:**
+Computes the electricity bill based on units used. Adds a 10% surcharge if the total bill exceeds ₹1000.
+```c
+#include <stdio.h>
+
+int main() {
+    float units, bill;
+
+    printf("Enter units used: ");
+    scanf("%f", &units);
+
+    if (units <= 100)
+        bill = units * 1.2;
+    else if (units <= 300)
+        bill = units * 2.0;
+    else
+        bill = units * 3.0;
+
+    if (bill > 1000)
+        bill += bill * 0.1; // add 10% surcharge
+
+    printf("Total Bill: ₹%.2f\n", bill);
+    return 0;
+}
+
+```
+
+## 🚌 Transport Discount System
+
+**Description:**
+Calculates transport ticket discounts based on passenger age.
+```c
+#include <stdio.h>
+
+int main() {
+    int age;
+    float price = 100, discount = 0;
+
+    printf("Enter age: ");
+    scanf("%d", &age);
+
+    if (age < 12)
+        discount = 0.5 * price;
+    else if (age >= 60)
+        discount = 0.3 * price;
+
+    printf("Final Ticket Price: ₹%.2f\n", price - discount);
+    return 0;
+}
+
+```
+
+## 🏦 Loan Eligibility Check
+
+**Description:**
+Determines loan eligibility based on salary and credit score.
+```c
+#include <stdio.h>
+
+int main() {
+    float salary;
+    int score;
+
+    printf("Enter salary: ₹");
+    scanf("%f", &salary);
+    printf("Enter credit score: ");
+    scanf("%d", &score);
+
+    if (salary >= 5000) {
+        if (score >= 750)
+            printf("Loan Approved: ₹5,00,000\n");
+        else
+            printf("Loan Approved: ₹2,00,000\n");
+    } else {
+        printf("Not eligible for a loan.\n");
+    }
+
+    return 0;
+}
+
+```
+
+## 🍕 Food Ordering System
+
+**Description:**
+A simple food ordering system that displays a menu and calculates the total bill based on user choice and quantity.
+```c
+#include <stdio.h>
+
+int main() {
+    int choice, qty;
+    float total = 0;
+
+    printf("=== MENU ===\n");
+    printf("1. Burger   - ₹100\n");
+    printf("2. Pizza    - ₹250\n");
+    printf("3. Sandwich - ₹150\n");
+    printf("4. Coffee   - ₹80\n");
+    printf("Choose item (1-4): ");
+    scanf("%d", &choice);
+
+    printf("Enter quantity: ");
+    scanf("%d", &qty);
+
+    switch (choice) {
+        case 1: total = 100 * qty; break;
+        case 2: total = 250 * qty; break;
+        case 3: total = 150 * qty; break;
+        case 4: total = 80 * qty; break;
+        default:
+            printf("Invalid choice!\n");
+            return 0;
+    }
+
+    printf("Total Bill: ₹%.2f\n", total);
+    return 0;
+}
+
+```
+
+
