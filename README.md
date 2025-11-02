@@ -672,7 +672,7 @@ int main() {
     int choice, qty;
     float total = 0;
 
-    printf("=== MENU ===\n");
+    printf("\nMENU\n");
     printf("1. Burger   - ₹100\n");
     printf("2. Pizza    - ₹250\n");
     printf("3. Sandwich - ₹150\n");
