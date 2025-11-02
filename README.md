@@ -24,6 +24,11 @@ Each section below includes:
 11. [Traffic Light Signal System](#-traffic-light-signal-system)
 12. [Grade Estimator](#-grade-estimator)
 13. [ATM menu](#-atm-menu)
+14. [Car Insurance Premium](#-Car-Insurance-Premium)
+15. [Electricity Bill Calculator](#-Electricity-Bill-Calculator)
+16. [Transport Discount System](#-Transport-Discount-System)
+17. [Loan Eligibility Check](#-Loan-Eligibility-Check)
+18. [Food Ordering System](#-Food-Ordering-System)
 
 ---
 
